@@ -6,7 +6,7 @@ def main():
     name = input("What is your name - ")
     print("Hello  ", name, "!")
     ans = input("do you want to continue ?")
-    if ans in ["yes" or "yeah" or "y"]:
+    if ans in ["yes", "yeah", "y"]:
         start_quiz()
     else:
         print("Okay see you later!")
@@ -24,6 +24,7 @@ def wrong():
 def start_quiz():
     n = 0
     print("Cool starting game!")
+    time.sleep(1)
     answer = input("What is the spiderman actor name ? ")
     time.sleep(2)
     if answer == "tom holand":
@@ -32,6 +33,7 @@ def start_quiz():
     else:
         wrong()
 
+    time.sleep(1)
     answer2 = input("What is Tony's AI called ? ")
     time.sleep(2)
     if answer2 == "jarvis":
@@ -40,6 +42,7 @@ def start_quiz():
     else:
         wrong()
 
+    time.sleep(1)
     answer3 = input("What is the nickname of winter soldier ? ")
     time.sleep(2)
     if answer3 == "bucky":
@@ -48,6 +51,7 @@ def start_quiz():
     else:
         wrong()
 
+    time.sleep(1)
     answer4 = input("Who wanted to kill half of universe ? ")
     time.sleep(2)
     if answer4 == "thanos":
@@ -56,6 +60,7 @@ def start_quiz():
     else:
         wrong()
 
+    time.sleep(1)
     answer5 = input("How many infinity stone were there ? ")
     time.sleep(2)
     if answer5 == "6":
@@ -65,8 +70,8 @@ def start_quiz():
         wrong()
 
     time.sleep(2)
-    print("you got ", n, " questions correct", end=" ")
-    print("and you are ", n / 5 * 100, " % correct")
+    print(name, "you got ", n, " questions correct", end=" ")
+    print("and you are", n / 5 * 100, " % correct")
 
 
 main()
