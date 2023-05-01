@@ -1,10 +1,4 @@
-def main():
-    number = int(input("Enter Number - "))
-    n = 0
-    while n < number:
-        print("Fuck")
-        n = n + 1
-
-
-print("yooooooo")
-main()
+n = 10
+while n > 0:
+    print(n)
+    n = n - 1
